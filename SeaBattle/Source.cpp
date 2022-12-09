@@ -230,16 +230,16 @@ bool Field::check_pos(ll x, ll y, Ship ship) {
 			}
 		}
 		if (y + size - 1 < 9) {
-			if (field[x][y + size + 1] != 0) {
+			if (field[x][y + size] != 0) {
 				flag = 0;
 			}
 			if (x > 0) {
-				if (field[x - 1][y + size + 1] != 0) {
+				if (field[x - 1][y + size] != 0) {
 					flag = 0;
 				}
 			}
 			if (x < 9) {
-				if (field[x + 1][y + size + 1] != 0) {
+				if (field[x + 1][y + size] != 0) {
 					flag = 0;
 				}
 			}
@@ -262,16 +262,16 @@ bool Field::check_pos(ll x, ll y, Ship ship) {
 			}
 		}
 		if (x + size - 1 < 9) {
-			if (field[x + size + 1][y] != 0) {
+			if (field[x + size][y] != 0) {
 				flag = 0;
 			}
 			if (y > 0) {
-				if (field[x + size + 1][y - 1] != 0) {
+				if (field[x + size][y - 1] != 0) {
 					flag = 0;
 				}
 			}
 			if (y < 9) {
-				if (field[x + size + 1][y + 1] != 0) {
+				if (field[x + size][y + 1] != 0) {
 					flag = 0;
 				}
 			}

@@ -1,0 +1,54 @@
+﻿  Source.cpp
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(39,16): warning C4244: инициализация: преобразование "double" в "ll", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(40,20): warning C4244: инициализация: преобразование "double" в "ll", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(41,22): warning C4244: инициализация: преобразование "double" в "ll", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(78,21): warning C4838: Преобразование из "ll" в "SHORT" требует сужающего преобразования.
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(78,21): warning C4244: инициализация: преобразование "ll" в "SHORT", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(78,24): warning C4838: Преобразование из "ll" в "SHORT" требует сужающего преобразования.
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(78,24): warning C4244: инициализация: преобразование "ll" в "SHORT", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(218,14): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(218,19): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(222,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(222,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(227,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(227,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(233,14): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(233,19): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(237,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(237,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(242,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(242,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(250,16): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(250,21): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(254,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(254,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(259,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(259,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(265,16): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(265,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(269,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(269,27): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(274,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(274,27): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(283,14): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(283,19): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(287,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(287,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(292,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(292,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(298,16): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(298,21): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(302,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(302,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(307,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(307,24): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(323,10): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(323,15): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(326,12): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(326,17): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(354,12): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(354,15): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(355,9): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(355,12): warning C4244: аргумент: преобразование "ll" в "const unsigned int", возможна потеря данных
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\SeaBattle\Source.cpp(361,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  SeaBattle.vcxproj -> C:\Users\user\OneDrive\Рабочий стол\Учёба\Языки высокого уровня\Программы\SeaBattle\Debug\SeaBattle.exe
