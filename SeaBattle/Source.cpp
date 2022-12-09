@@ -95,6 +95,7 @@ public:
 
 class Field {
 private:
+	bool is_my;
 	matrix field;
 	Color border_color;
 	ll ships_cnt;
@@ -107,7 +108,8 @@ public:
 	bool check_pos(Ship ship);
 	void set_ship(Ship ship);
 	void generate_field();
-	Field(Color new_border_color);
+	void manual_generate_field();
+	Field(Color new_border_color, bool new_is_my);
 	void show(ll x, ll y);
 	void set_border(Ship ship);
 	bool check_pos(ll x, ll y);
@@ -148,7 +150,8 @@ ll Ship::get_y() {
 	return y;
 }
 
-Field::Field(Color new_border_color) {
+Field::Field(Color new_border_color, bool new_is_my) {
+	is_my = new_is_my;
 	ships_cnt = 0;
 	border_color = new_border_color;
 	field.resize(10);
@@ -209,7 +212,12 @@ void Field::show_field(ll x, ll y) {
 				set_color(Red, Red);
 			}
 			if (field[i][j] >= 10) {
-				set_color(White, White);
+				if (is_my) {
+					set_color(Magenta, Magenta);
+				}
+				else {
+					set_color(White, White);
+				}
 			}
 			cout << block;
 		}
@@ -350,14 +358,37 @@ void Field::set_ship(Ship ship) {
 }
 
 void Field::generate_field() {
-	for (int i = 0; i < 4; ++i) {
-		for (int j = i; j < 4; ++j) {
+	for (int i = 4; i > 0; --i) {
+		for (int j = i - 1; j < 4; ++j) {
 			bool flag = 1;
 			while (flag) {
-				Ship ship(4 - i, rand() % 10, rand() % 10, bool(rand() % 2));
+				Ship ship(i, rand() % 10, rand() % 10, bool(rand() % 2));
 				if (check_pos(ship)) {
 					set_ship(ship);
 					flag = 0;
+				}
+			}
+		}
+	}
+}
+
+void Field::manual_generate_field() {
+	show(0, 0);
+	set_cursor(0, 15);
+	for (int i = 4; i > 0; --i) {
+		for (int j = i - 1; j < 4; ++j) {
+			bool flag = 1;
+			while (flag) {
+				set_color(White, Black);
+				ll x, y, o;
+				cin >> x >> y >> o;
+				Ship ship(i, x, y, o);
+				if (check_pos(ship)) {
+					set_ship(ship);
+					flag = 0;
+					system("cls");
+					show(0, 0);
+					set_cursor(0, 15);
 				}
 			}
 		}
@@ -503,23 +534,13 @@ int main() {
 	system("cls");
 	cout << block;
 
-	Field field(Blue);
+	Field field(Blue, 1);
 	set_color(Black, Black);
 	system("cls");
-	field.generate_field();
+	field.manual_generate_field();
 	field.show(0, 0);
-	for (int i = 0; i < 10; ++i) {
-		for (int j = 0; j < 10; ++j) {
-			if (field.check_pos(i, j)) {
-				Sleep(150);
-				field.update_field(i, j);
-				set_color(Black, Black);
-				system("cls");
-				field.show(0, 0);
-				cout << "";
-			}
-		}
-	}
+	
+
 
 	set_color(Black, Black);
 	system("cls");
