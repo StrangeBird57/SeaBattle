@@ -97,7 +97,7 @@ private:
 	Color border_color;
 	ll ships_cnt;
 	vector <Ship> ships;
-	char symbols[10] = { 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'Ê' };
+	char symbols[10] = { 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½', 'ï¿½' };
 
 	void show_border(ll x, ll y);
 	void show_field(ll x, ll y);
@@ -345,6 +345,25 @@ void Field::generate_field() {
 	}
 }
 
+void Field::manual_generate_field() {
+	for (int i = 0; i < 4; ++i) {
+		for (int j = i; j < 4; ++j) {
+			ll o;
+			cin >> o;
+			Ship ship(4 - i, o);
+			bool flag = 1;
+			while (flag) {
+				ll x, y;
+				cin >> x >> y;
+				if (check_pos(x, y, ship)) {
+					set_ship(x, y, ship);
+					flag = 0;
+				}
+			}
+		}
+	}
+}
+
 void Field::show(ll x, ll y) {
 	show_border(x, y);
 	show_field(x + 2, y + 1);
@@ -366,11 +385,12 @@ int main() {
 	Field field(Blue);
 	set_color(Black, Black);
 	system("cls");
-	field.generate_field();
-	field.show(0, 0);
+	// field.generate_field();
+	// field.show(0, 0);
 
-	set_cursor(0, 13);
-	cout << block;
+	set_cursor(0, 15);
+	field.manual_generate_field();
+	field.show(0, 0);
 
 	set_color(Black, Black);
 	system("cls");
