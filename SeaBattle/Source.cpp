@@ -109,11 +109,22 @@ public:
 	void set_ship(Ship ship);
 	void generate_field();
 	void manual_generate_field();
+	Field() {}
 	Field(Color new_border_color, bool new_is_my);
 	void show(ll x, ll y);
 	void set_border(Ship ship);
 	bool check_pos(ll x, ll y);
 	ll update_field(ll x, ll y);
+	ll get_ships_cnt();
+	vecp get_free_pos();
+};
+
+class Game {
+private:
+	Field my, bot;
+public:
+	Game();
+	void start();
 };
 
 Ship::Ship(ll new_size, ll new_x, ll new_y, bool new_orientation) {
@@ -195,6 +206,9 @@ void Field::show_border(ll x, ll y) {
 	for (int i = 0; i < 12; ++i) {
 		cout << block;
 	}
+	set_cursor(x + 11, y + 13);
+	set_color(White, Black);
+	cout << ships_cnt;
 }
 
 void Field::show_field(ll x, ll y) {
@@ -382,7 +396,7 @@ void Field::manual_generate_field() {
 				set_color(White, Black);
 				ll x, y, o;
 				cin >> x >> y >> o;
-				Ship ship(i, x, y, o);
+				Ship ship(i, --x, --y, o);
 				if (check_pos(ship)) {
 					set_ship(ship);
 					flag = 0;
@@ -491,7 +505,7 @@ void Field::set_border(Ship ship) {
 				field[x + i][y] = 1;
 			}
 			if (y > 0) {
-				if (field[x + i][y - 1] != 0) {
+				if (field[x + i][y - 1] == 0) {
 					field[x + i][y - 1] = 1;
 				}
 			}
@@ -527,24 +541,88 @@ ll Field::update_field(ll x, ll y) {
 	}
 }
 
-int main() {
-	setlocale(LC_ALL, "Russian");
-	srand(time(NULL));
-	set_color(White, Black);
-	system("cls");
-	cout << block;
+ll Field::get_ships_cnt() {
+	return ships_cnt;
+}
 
-	Field field(Blue, 1);
-	set_color(Black, Black);
-	system("cls");
-	field.manual_generate_field();
-	field.show(0, 0);
-	
+vecp Field::get_free_pos() {
+	vecp res;
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 10; ++j) {
+			if ((field[i][j] == 0) || (field[i][j] > 9)) {
+				res.pb({ i, j });
+			}
+		}
+	}
+	return res;
+}
 
+Game::Game() {
+	Field tmp1(Blue, 1);
+	my = tmp1;
+	Field tmp2(Green, 0);
+	bot = tmp2;
+}
 
+void Game::start() {
 	set_color(Black, Black);
 	system("cls");
 	set_cursor(0, 0);
+	my.generate_field();
+	bot.generate_field();
+	my.show(0, 0);
+	bot.show(28, 0);
+	while ((my.get_ships_cnt() > 0) && (bot.get_ships_cnt() > 0)) {
+		bool tern = 1;
+		while (tern) {
+			set_color(Black, Black);
+			system("cls");
+			my.show(0, 0);
+			bot.show(28, 0);
+			tern = 0;
+			set_cursor(0, 15);
+			ll x, y;
+			set_color(White, Black);
+			cin >> x >> y;
+			if (bot.check_pos(--x, --y)) {
+				ll num = bot.update_field(x, y);
+				set_color(Black, Black);
+				system("cls");
+				my.show(0, 0);
+				bot.show(28, 0);
+				tern = (num > 0);
+			}
+			else {
+				tern = 1;
+			}
+		}
+		tern = 1;
+		while (tern) {
+			set_color(Black, Black);
+				system("cls");
+				my.show(0, 0);
+				bot.show(28, 0);
+			tern = 0;
+			set_cursor(0, 15);
+			vecp t = my.get_free_pos();
+			random_shuffle(all(t));
+			ll num = my.update_field(t[0].first, t[0].second);
+			set_color(Black, Black);
+			system("cls");
+			my.show(0, 0);
+			bot.show(28, 0);
+			tern = (num > 0);
+		}
+	}
 	set_color(White, Black);
+	system("cls");
+	set_cursor(0, 0);
+}
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	srand(time(NULL));
+	Game game;
+	game.start();
 	return 0;
 }
