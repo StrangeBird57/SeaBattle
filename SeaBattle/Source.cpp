@@ -331,7 +331,7 @@ void Field::set_ship(ll x, ll y, Ship ship) {
 void Field::generate_field() {
 	for (int i = 0; i < 4; ++i) {
 		for (int j = i; j < 4; ++j) {
-			Ship ship(i + 1, bool(rand() % 2));
+			Ship ship(4 - i, bool(rand() % 2));
 			bool flag = 1;
 			while (flag) {
 				ll x = rand() % 10;
@@ -361,19 +361,16 @@ int main() {
 	srand(time(NULL));
 	set_color(White, Black);
 	system("cls");
+	cout << block;
 
 	Field field(Blue);
 	set_color(Black, Black);
 	system("cls");
 	field.generate_field();
-	Ship ship1(3, 1), ship2(3, 0);
-	/*if (field.check_pos(9, 3, ship1)) {
-		field.set_ship(9, 3, ship1);
-	}
-	if (field.check_pos(6, 5, ship2)) {
-		field.set_ship(6, 5, ship2);
-	}*/
 	field.show(0, 0);
+
+	set_cursor(0, 13);
+	cout << block;
 
 	set_color(Black, Black);
 	system("cls");
@@ -381,6 +378,3 @@ int main() {
 	set_color(White, Black);
 	return 0;
 }
-
-// 9 3 3 1
-// 6 5 3 0
